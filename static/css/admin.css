@@ -1,0 +1,21 @@
+body {
+  background-color: white;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.navbar .nav li {
+  list-style: none;
+}
+
+.sf_admin_filter:before {
+  content: "List Filters";
+  font-size: 115%;
+  font-weight: bold;
+  color: #888;
+}
+
+.error-block {
+	color: red;
+}

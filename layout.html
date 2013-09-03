@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <!-- content-type: text/html -->
+    <title>United Tennis Academy</title>
+    <link rel="shortcut icon" href="/logo.png" />
+    <link rel="stylesheet" type="text/css" href="static/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css">
+
+    <script type="text/javascript" src="static/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="static/js/bootstrap.js"></script>
+    <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="static/js/bootstrap-carousel.js"></script>
+    <script type="text/javascript" src="static/js/bootstrap-dropdown.js"></script>
+    <script type="text/javascript" src="static/js/custom.js"></script>
+    <script type="text/javascript" src="static/js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="static/js/jquery.carouFredSel-6.2.1-packed.js"></script>
+    
+  </head>
+  <body>
+    <div class="container" style="width: 1070px; background: white; margin-top: 9px; border-radius: 3px; box-shadow: 8px 7px 19px 0px gray;">
+      <div class="row">     
+        <div class="span9 adjust-span9" style="margin:0;">
+
+      <div>
+        
+      </div>
+
+
+<!-- take from here  for javascript based layout-->
+
+            <div style="padding-top: 46px; margin-left: -10px;">
+            <div class="navbar no-border">
+            <div class="navbar-inner no-border" style="border:0;">
+              <div class="logoname">
+                <a href="index.html">
+                  <div>United Tennis</div>
+                  <div class="logoname_gap"></div>
+                  <div>Academy</div>
+                </a>
+              </div>
+              <div class="container adjust-container">
+                <div class="arrow-left"></div>
+                <ul class="nav pull-left nav-left-margin">
+                  <li><a href="index.html" style="color: white;">Home</a></li>                  
+                  <li class="dropdown">
+                    <a href="about_index.html" class="dropdown-toggle" style="color: white;">About Us</a>
+                    <!-- <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                      <li><a href="about_objective.html">Academy Objectives</a></li>  
+                      <li><a href="about_vision.html">Our Vision: Mission</a></li>
+                      <li><a href="about_profile.html">Academy Profile</a></li>
+                    </ul> -->
+
+                  <li><a href="events.html" style="color: white;">Upcoming Events</a></li>
+                  <li class="dropdown">
+                  <a href="facilities.html" class="dropdown-toggle" style="color: white;">Facilities</a>
+                 <!--  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                      <li><a href="facilities_coachingpro.html">Coaching programmes</a></li>  
+                      <li><a href="facilities_enrpro.html">Enrollment process</a></li>
+                  </ul> -->
+                  <li><a href="enquiry.html" style="color: white;">Enquiries</a></li>
+                  <li><a href="contactus.html" style="color: white;">Contact Us</a></li>
+                </ul>
+              </div><!--end inner container-->
+            </div><!-- end navbar-inner-->
+            </div><!-- end navbar-->
+    <div class="logo"> 
+      <!-- Company Logo -->
+      <a href="index.html">
+       <img src="images/logo.png" width="160px"/>
+      </a>
+    </div>  <!-- end span3 -->
+            </div>
+
+<!-- take upto here -->
+
+ <div class="list_carousel">
+
+    <div id="foo1">
+        <img src="images/img2.jpg">
+        <img src="images/img3.jpg">
+        <img src="images/img7.jpg">
+        <img src="images/img4.jpg">
+        <img src="images/img5.jpg">
+        <!-- <img src="images/img9.jpg"> -->
+        <img src="images/img6.jpg">
+        <img src="images/img1.jpg">
+    </div>
+    <div class="clearfix"></div>
+      <a class="prev" id="foo1_prev" href="#"><span>prev</span></a>
+      <a class="next" id="foo1_next" href="#"><span>next</span></a>
+  </div> 
+
+
+
+
+
+  <!-- <div class="marquee"> <!-- marquee-->
+  <!-- <marquee class="html-marquee" direction="left" width="773px" behavior="scroll" scrollamount="4" onmouseover="this.stop();" onmouseout="this.start();" style="margin-top: 57px; border:solid 10px #560819; width:1010px;">
+    <img src="images/img2.jpg" STYLE="width: 250px; height: 250px; BORDER: solid 3px black">
+    <img src="images/img1.jpg" STYLE="width: 250px; height: 250px; BORDER: solid 3px black">
+    <img src="images/img3.jpg" STYLE="width: 250px; height: 250px; BORDER: solid 3px black">
+    <img src="images/img4.jpg" STYLE="width: 250px; height: 250px; BORDER: solid 3px black">
+    <img src="images/img5.jpg" STYLE="width: 250px; height: 250px; BORDER: solid 3px black">
+    <img src="images/img6.jpg" STYLE="width: 250px; height: 250px; BORDER: solid 3px black">
+    <img src="images/img7.jpg" STYLE="width: 250px; height: 250px; BORDER: solid 3px black">
+    </marquee>
+  </div> -->
+
+      <!-- <div> <?php echo $sf_content ?><br><br><br><br><br> </div> -->
+        </div> <!--end span9-->   
+
+      </div> <!--end row-->
+    </div><br> <!--end outer container-->
+
+  </body>
+</html>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+$("#foo1").carouFredSel({
+
+  items   : 3,
+
+  scroll  : {
+    items           : 1,
+    duration        : 1000,
+    timeoutDuration : 2000
+
+   },
+    auto    : true,
+    prev    : "#foo1_prev",
+    next    : "#foo1_next"
+}).parent().css("margin", "auto");
+});
+</script>

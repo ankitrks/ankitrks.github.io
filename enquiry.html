@@ -1,0 +1,171 @@
+<!DOCTYPE html>  
+<html>  
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<script type="text/javascript" src="static/js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="static/js/script_css.js"></script>
+		<link rel="stylesheet" type="text/css" href="static/css/responsiveslides.css">
+ 	<link rel="stylesheet" href="static/css/demo.css">
+
+	<script src="static/js/responsiveslides.min.js"></script>
+	
+	<script type="text/javascript">
+       $(function () {
+
+      // Slideshow 3
+      $("#slider3").responsiveSlides({
+        manualControls: '#slider3-pager',
+        // maxwidth: 540,
+        // nav: true,
+      });
+
+    });
+ 
+	</script>
+
+</head>
+<body>
+
+
+  <div class="container" style="width: 1070px; background: white; margin-top: 9px; border-radius: 3px; box-shadow: 8px 7px 19px 0px gray;">
+    <div class="row">     
+      <div class="span9 adjust-span9" style="margin:0;">
+
+				<div id="content" class="container" style="width:940px;">
+			    <div class="row">
+					  <div class="span9" style="margin:0;">
+					  	<div style="margin-left:23px; padding-top: 44px;";>
+			    
+				  		<!-- main content starts here -->
+				  		<div class="myslider">
+					  		<div class="slider-heading">Training Session at United Tennis Academy</div>
+	        			    <ul class="rslides" id="slider3">
+								      <li><img src="images/img7.jpg" alt=""></li>
+								      <li><img src="images/img8.jpg" alt=""></li>
+								      <li><img src="images/img9.jpg" alt=""></li>
+								      <li><img src="images/img10.jpg" alt=""></li>
+								      <li><img src="images/img11.jpg" alt=""></li>
+								      <li><img src="images/img12.jpg" alt=""></li>
+								      <li><img src="images/img13.jpg" alt=""></li>
+								      <li><img src="images/img14.jpg" alt=""></li>
+								    </ul>
+
+				        		<ul id="slider3-pager">
+							      <li><a href="#"><img class="thumbnail-slider" src="images/img7_mini.png" alt=""></a></li>
+							      <li><a href="#"><img class="thumbnail-slider" src="images/img8_mini.png" alt=""></a></li>
+							      <li><a href="#"><img class="thumbnail-slider" src="images/img9_mini.png" alt=""></a></li>
+							      <li><a href="#"><img class="thumbnail-slider" src="images/img10_mini.png" alt=""></a></li>
+							      <li><a href="#"><img class="thumbnail-slider" src="images/img11_mini.png" alt=""></a></li>
+							      <li><a href="#"><img class="thumbnail-slider" src="images/img12_mini.png" alt=""></a></li>
+							      <li><a href="#"><img class="thumbnail-slider" src="images/img13_mini.png" alt=""></a></li>
+							      <li><a href="#"><img class="thumbnail-slider" src="images/img14_mini.png" alt=""></a></li>
+							    </ul>
+						    </div>  <!-- end myslider -->
+
+						    <div class="margin_left-90">
+
+<div class="container" style="width:940px;">
+     <div class="row">
+	  <div class="span9" style="margin:0;">
+	  	<div style="width:1054px; margin-left:20px; padding-top: 44px;">
+	  		<div style="text-align:justify; padding-right: 20px;">
+
+<h1 class="headings">ENQUIRY</h1>
+<div style="margin-left: 20px; margin-top: 20px;">
+<form action="/frontend_dev.php/enquiry/create" method="post">
+
+<div class="contact">
+	<div class="contact_info">
+		<label class="contact_label" for="enquiries_name">Name</label>
+		<input class="enq_cursive" type="text" name="enquiries[name]" id="enquiries_name" placeholder="your name">
+		<label class="contact_label" for="enquiries_mob">Mobile</label>
+		<input class="enq_cursive" type="text" name="enquiries[mob]" id="enquiries_mob" placeholder="you mobile number">
+		<label class="contact_label" for="enquiries_email">Email</label>
+		<input class="enq_cursive" type="text" name="enquiries[email]" id="enquiries_email" placeholder="name@example.com">
+		<label class="contact_label" for="enquiries_msg">Msg</label>
+		<textarea class="enq_cursive" rows="4" cols="30" name="enquiries[msg]" id="enquiries_msg" placeholder="your short message"></textarea><input type="hidden" name="enquiries[_csrf_token]" value="ee22625eab49e7d1a32629fb1beab021" id="enquiries__csrf_token">
+	</div>
+	<div class="contact_adress">
+		<label class="contact_label" for="enquiries_city">City</label>
+		<input class="enq_cursive" type="text" name="enquiries[city]" id="enquiries_city" placeholder="your city">
+		<label class="contact_label" for="enquiries_state">State</label>
+		<input class="enq_cursive" type="text" name="enquiries[state]" id="enquiries_state" placeholder="your state">
+		<label class="contact_label" for="enquiries_country">Country</label>
+		<input class="enq_cursive" type="text" name="enquiries[country]" id="enquiries_country" placeholder="your country">
+		<label class="contact_label" for="enquiries_address">Address</label>
+		<textarea class="enq_cursive" rows="4" cols="30" name="enquiries[address]" id="enquiries_address" placeholder="your address"></textarea>
+	</div>
+	<div id="enq_submit"><input type="submit" value="Save"></div>
+</div>
+
+  <!-- <table>
+    <tfoot>
+      <tr>
+        <td colspan="2">
+          &nbsp;<- <a href="/frontend_dev.php/enquiry">Back to list</a> -
+                    <input id="enq_submit" type="submit" value="Save">
+        </td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr>
+  <th width="100"><label for="enquiries_name">Name :</label></th>
+  <td><input class="enq_cursive" type="text" name="enquiries[name]" id="enquiries_name" placeholder="your name"></td>
+</tr>
+<tr>
+  <th width="100"><label for="enquiries_address">Address :</label></th>
+  <td><textarea class="enq_cursive" rows="4" cols="30" name="enquiries[address]" id="enquiries_address" placeholder="your address"></textarea></td>
+</tr>
+<tr>
+  <th width="100"><label for="enquiries_city">City :</label></th>
+  <td><input class="enq_cursive" type="text" name="enquiries[city]" id="enquiries_city" placeholder="your city"></td>
+</tr>
+<tr>
+  <th width="100"><label for="enquiries_state">State :</label></th>
+  <td><input class="enq_cursive" type="text" name="enquiries[state]" id="enquiries_state" placeholder="your state"></td>
+</tr>
+<tr>
+  <th width="100"><label for="enquiries_country">Country :</label></th>
+  <td><input class="enq_cursive" type="text" name="enquiries[country]" id="enquiries_country" placeholder="your country"></td>
+</tr>
+<tr>
+  <th width="100"><label for="enquiries_mob">Mobile :</label></th>
+  <td><input class="enq_cursive" type="text" name="enquiries[mob]" id="enquiries_mob" placeholder="you mobile number"></td>
+</tr>
+<tr>
+  <th width="100"><label for="enquiries_email">Email :</label></th>
+  <td><input class="enq_cursive" type="text" name="enquiries[email]" id="enquiries_email" placeholder="name@example.com"></td>
+</tr>
+<tr>
+  <th width="100"><label for="enquiries_msg">Msg :</label></th>
+  <td><textarea class="enq_cursive" rows="4" cols="30" name="enquiries[msg]" id="enquiries_msg" placeholder="your short message"></textarea><input type="hidden" name="enquiries[_csrf_token]" value="ee22625eab49e7d1a32629fb1beab021" id="enquiries__csrf_token"></td>
+</tr>
+
+    </tbody>
+  </table> -->
+</form>
+</div>
+
+		</div>
+	  	</div>
+	  </div> <!--end span9-->
+     </div> <!--end row-->
+    </div> <!--end outer container-->
+
+
+						    </div>  <!--end margin_left-90 -->
+
+				        <!-- main content ends here -->
+
+					  	</div>
+					  </div> <!--end span10-->
+			     </div> <!--end row-->
+			    </div> <!--end outer container-->
+
+      </div> <!--end span9-->   
+    </div> <br><br><br><!--end row-->
+  </div><br> <!--end outer container-->
+
+
+</body>
+</html>
